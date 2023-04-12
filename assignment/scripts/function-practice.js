@@ -12,7 +12,7 @@ function hello() {
 console.log('Test - should say "Hello World!"', hello());
 //FOR QUESTION 1, is there something that is needed here? I am unsure if something is missing here or not. Is this an example only? The return Hello World! is returned.
 // making this already complete?
-
+console.log("-------space between questions-------");
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
@@ -21,19 +21,19 @@ function helloName(name) {
 
 // Remember to call the function to test
 console.log(helloName("Stacy"));
-
+console.log("-------space between questions-------");
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
 console.log(addNumbers(2, 3));
-
+console.log("-------space between questions-------");
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(n1, n2, n3) {
   return n1 * n2 * n3;
 }
 console.log(multiplyThree(2, 3, 4));
-
+console.log("-------space between questions-------");
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive(number) {
@@ -50,7 +50,7 @@ isPositive(2);
 console.log("isPositive - should say true", isPositive(3));
 console.log("isPositive - should say false", isPositive(0));
 console.log("isPositive - should say false", isPositive(-3));
-
+console.log("-------space between questions-------");
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast(array) {
@@ -62,13 +62,20 @@ function getLast(array) {
 }
 
 console.log(getLast([2, 3, 4, 5, 6]));
-//console.log(getLast());
-
+console.log(getLast());
+console.log("-------space between questions-------");
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find(value, array) {}
-
+function find(value, array) {
+  for (obj of array) {
+    if (value === obj) {
+      return true;
+    }
+  }
+}
+console.log(find(1, [9, 1, 2, 3, 4]));
+console.log("-------space between questions-------");
 // ----------------------
 // Stretch Goals
 // ----------------------
