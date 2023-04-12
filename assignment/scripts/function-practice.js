@@ -33,15 +33,18 @@ function multiplyThree(n1, n2, n3) {
   return n1 * n2 * n3;
 }
 console.log(multiplyThree(2, 3, 4));
+
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
   }
-  return;
+  return false;
 }
 // Call the function to test each outcome (true & false)
+
+isPositive(2);
 // Write a separate console.log statement for each outcome
 console.log("isPositive - should say true", isPositive(3));
 console.log("isPositive - should say false", isPositive(0));
